@@ -676,6 +676,4 @@ app.post("/hotel", (req, res) => {
   );
 });
 
-app.listen(3001, () => {
-  console.log("rodando na porta 3001");
-});
+app.listen({ host: "0.0.0.0", port: 10000 });
